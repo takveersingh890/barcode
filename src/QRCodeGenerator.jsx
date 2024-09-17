@@ -1,7 +1,7 @@
-import React from 'react';
-import QRCode from 'react-qr-code'; // Using 'react-qr-code' as it's more reliable with Vite
+import React from "react";
+import QRCode from "react-qr-code";
 
-const QRCodeGenerator = ({ text }) => {
+const QRCodeGenerator = ({ text, fileName }) => {
   return (
     <div style={styles.qrContainer}>
       <QRCode value={text} size={200} />
@@ -11,12 +11,12 @@ const QRCodeGenerator = ({ text }) => {
 
 const styles = {
   qrContainer: {
-    display: 'inline-block',
-    padding: '20px',
-    border: '2px solid #000',
-    borderRadius: '10px',
-    backgroundColor: '#f9f9f9',
-    marginTop: '20px',
+    display: "inline-block",
+    padding: "20px",
+    border: "2px solid #000",
+    borderRadius: "10px",
+    backgroundColor: "#f9f9f9",
+    marginTop: "20px",
   },
 };
 
